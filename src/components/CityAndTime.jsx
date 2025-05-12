@@ -23,10 +23,10 @@ const CityAndTime = ({ cityName, lat, lon, setLat, setLon }) => {
       let url;
 
       if (encodedCity) {
-        url = `https://api.openweathermap.org/data/2.5/weather?q=${encodedCity}&units=metric&appid=225a899c0e296b85a416d3d1d9629db3
+        url = `https://api.openweathermap.org/data/2.5/weather?q=${encodedCity}&units=metric&appid="Your_openweather_API"
 `;
       } else if (lat && lon) {
-        url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=225a899c0e296b85a416d3d1d9629db3
+        url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid="Your_openweather_API"
 `;
       } else {
         toast.error("Missing city name or coordinates");
@@ -41,13 +41,13 @@ const CityAndTime = ({ cityName, lat, lon, setLat, setLon }) => {
       setLon(coord.lon);
 
       const forecast = await axios.get(
-        `https://api.openweathermap.org/data/2.5/forecast?lat=${coord.lat}&lon=${coord.lon}&units=metric&appid=225a899c0e296b85a416d3d1d9629db3
+        `https://api.openweathermap.org/data/2.5/forecast?lat=${coord.lat}&lon=${coord.lon}&units=metric&appid="Your_openweather_API"
 `
       );
       setForecastData(forecast.data);
 
       const uv = await axios.get(
-        `https://api.openweathermap.org/data/2.5/uvi?lat=${coord.lat}&lon=${coord.lon}&appid=225a899c0e296b85a416d3d1d9629db3
+        `https://api.openweathermap.org/data/2.5/uvi?lat=${coord.lat}&lon=${coord.lon}&appid="Your_openweather_API"
 `
       );
       setForecastData(forecast.data);
