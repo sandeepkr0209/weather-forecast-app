@@ -40,12 +40,15 @@ src/
 ├── components/
 │   ├── Navbar.jsx
 │   ├── ForeCast.jsx
+|   ├── Clock.jsx
 │   └── CityAndTime.jsx
 ├── assets/
 │   ├── logo.jpg
 │   ├── search.png
-│   └── location.png
+│   ├── location.png
+|   └── etc...
 ├── App.jsx
+├──index.css
 └── main.jsx
 ```
 
