@@ -4,7 +4,7 @@ A sleek, responsive web app built with React that shows current weather, 5-day f
 
 ## 🖼️ Preview
 
-![App Preview](./sf.png) <!-- Add a screenshot named preview.png in the repo -->
+![App Preview](./web.png) <!-- Add a screenshot named preview.png in the repo -->
 
 ## 🔥 Features
 
